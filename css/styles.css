@@ -1,0 +1,285 @@
+/**
+ * Базові стилі для всього сайту
+ */
+body {
+	position: relative;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.4;
+	color: #000;
+	min-width: 320px;
+	overflow-x: hidden;
+	height: auto;
+	
+}
+
+
+/**
+ * Navbar
+ */
+
+ .navbar {
+	width: 100%;
+	height: 80px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, .9);
+	margin-bottom: 5px;
+	position: fixed;
+	top: 0;
+	background-color: inherit;
+	z-index: 1;
+ }
+
+ .navbar .container {
+	height: inherit;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+ }
+
+ .navbar-menu {
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style-type: none;
+	
+ }
+
+ .navbar-menu li {
+	display: inline-block;
+	
+ }
+
+ .navbar-menu li a {
+	display: inline-block;
+	color: #000;
+	opacity: 0.6;
+	text-decoration: none;
+	padding: 10px;
+	transition: all .1s ease-in-out;
+ }
+
+ .navbar-menu li a:hover {
+	opacity: 1;
+ }
+
+.navbar-wrap {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.callback {
+	margin-left: 30px;
+	padding: 10px 30px;
+	background-color: green;
+	border-radius: 100px;
+	color: #fff;
+	text-decoration: none;
+	transition: all .1s ease-out;
+	box-shadow: 0 4px 6px rgba(0, 128, 0, .2);
+}
+
+.callback:hover {
+	transform: scale(1.04);
+	color: #fff;
+	box-shadow: 0 9px 9px rgba(0, 128, 0, .5);
+}
+
+.navbar-brand {
+	font-weight: 700;
+	font-size: 26px;
+	text-decoration: none;
+	color: #000;
+}
+
+.navbar-brand:hover {
+	color: green;
+	transition: all .1s ease-in-out;
+}
+
+/* Головна сторінка */
+
+.header {
+	background: url("../img/bgpizza.jpg");
+	object-fit: cover;
+	width: 100%;
+	height: 700px;
+	margin-top: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.welcome {
+	text-align: center;
+	font-weight: 700;
+	color: #fff;
+	font-size: 20;
+}
+
+.welcomePizza {
+	color: green;
+	text-decoration: underline;
+	transition: all .1s ease-in-out;
+}
+
+.welcomePizza:hover {
+	color: #fff;
+	cursor: pointer;
+}
+
+.aboutus {
+	font-size: 19px;
+	text-align: center;
+	color: #fff;
+	opacity: 0.8;
+}
+
+.line {
+	width: 100%;
+	height: 10px;
+	background-color: green;
+}
+
+/* Карточки товару */
+
+
+
+.image {
+	margin-bottom: 10px;
+}
+
+.image img {
+	height: 300px;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 7px;
+	transition: all .1s ease-in-out;
+
+}
+
+.image img:hover {
+	transform: scale(1.06);
+	box-shadow: 0 7px 5px rgba(0, 0, 0, .7);
+}
+
+.info h3 {
+	font-size: 21px;
+	margin-bottom: 0;
+}
+
+.rating {
+	margin-bottom: 0;
+	padding-left: 0;
+	list-style-type: none;
+
+}
+
+.rating li {
+	display: inline-block;
+	color: gold;
+}
+
+
+
+.info-price {
+	width: 300px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.add-to-cart {
+	border: none;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: green;
+	color: #fff;
+	border-radius: 10px;
+	transition: all .1s ease-in-out;
+}
+
+.price {
+	font-weight: 700;
+	font-size: 18px;
+	
+}
+
+.add-to-cart:hover {
+	transform: scale(1.04);
+	box-shadow: 0 9px 9px rgba(0, 128, 0, .5);
+}
+
+.col-md-2 {
+	margin: 0 auto;
+}
+
+.product {
+	margin-bottom: 50px;
+}
+
+.row {
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+/* Додаткова інформація */
+
+.container-time {
+	width: 100%;
+	height: 500px;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	background: url("../img/bgpizza.jpg");
+	object-fit: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 100px;
+	border-top: 10px solid green;
+	border-bottom: 10px solid green;
+}
+
+.container-time span {
+	text-decoration: underline;
+	font-size: 21px;
+}
+
+/* Footer */
+
+footer {
+	width: 100%;
+	height: 200px;
+	background-color: green;
+	border-radius: 75px 75px 0 0;
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 19px;
+	
+}
+
+.footer-brand {
+	font-weight: 700;
+	font-size: 26px;
+	text-decoration: none;
+}
+
+
+footer ion-icon {
+	margin-right: 6px;
+	position: relative;
+	top: 3px;
+}
+
+footer a {
+	text-decoration: none;
+	color: #fff;
+}
+
+footer a:hover {
+	color: rgb(24, 23, 23);
+}
